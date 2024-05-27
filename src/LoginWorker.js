@@ -41,7 +41,7 @@ export default function LoginWorker(){
     const name=username;
     const pass=password;
     console.log(name,pass);
-    fetch("http://localhost:8080/loginworker",{
+    fetch("https://rgukt-problems-hub.onrender.com/loginworker",{
       method:"POST",
       crossDomain:true,
       headers:{
