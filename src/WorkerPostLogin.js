@@ -12,7 +12,7 @@ export default function WorkerPostLogin(){
 
     const {name}=useContext(UsernameContext);
 
-    fetch(`http://localhost:8080/worker-post-login/${name}`,{
+    fetch(`https://rgukt-problems-hub.onrender.com/worker-post-login/${name}`,{
         method:"GET",
         crossDomain:true,
         headers:{
