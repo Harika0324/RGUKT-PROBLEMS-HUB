@@ -52,7 +52,7 @@ export default function Problem(){
 //   const handleClick=()=>{
 
 //   }
-fetch(`http://localhost:8080/problems/${name}`,{
+fetch(`https://rgukt-problems-hub.onrender.com/problems/${name}`,{
         method:"GET",
         crossDomain:true,
         headers:{
@@ -82,7 +82,7 @@ const [activeCases, setActiveCases] = useState([{}]);
     setRoomNo("");
     setWing("");
     setDescription("");
-    fetch(`http://localhost:8080/problems/${name}`,{
+    fetch(`https://rgukt-problems-hub.onrender.com/problems/${name}`,{
       
       method:"POST",
       crossDomain:true,
@@ -106,7 +106,7 @@ const [activeCases, setActiveCases] = useState([{}]);
     });
   }
   const handleStatus=(row,index)=>{
-    fetch(`http://localhost:8080/status/${name}/${index}`,{
+    fetch(`https://rgukt-problems-hub.onrender.com/status/${name}/${index}`,{
       
       method:"POST",
       crossDomain:true,
